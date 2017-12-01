@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AlertModule } from 'ngx-bootstrap';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
+
 
 import { AppComponent } from './app.component';
 
@@ -16,10 +19,10 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AlertModule.forRoot(),
     NgbModule.forRoot(),
-    NgbModule
-
+    NgbModule,
+    AlertModule.forRoot(),
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
