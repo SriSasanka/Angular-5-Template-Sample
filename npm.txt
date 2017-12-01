@@ -1,0 +1,72 @@
+Bootstrap :
+
+npm install bootstrap@4.0.0-beta.2
+
+
+Jquery :
+
+npm install jquery
+
+
+Popper.js  :
+
+npm install popper.js --save
+
+
+Tooltip.js  :
+
+
+npm install tooltip.js --save
+
+
+ng bootstrap  :
+
+
+npm install --save @ng-bootstrap/ng-bootstrap
+
+need to do following for every component :
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+@NgModule({
+  imports: [NgbModule.forRoot(),
+    NgbModule]
+
+ngx bootstrap
+
+npm install ngx-bootstrap --save
+
+need to do following for every component :
+
+import { AlertModule } from 'ngx-bootstrap';
+
+@NgModule({
+  imports: [AlertModule.forRoot(),...]
+  
+  angular font awsome :
+  
+  npm i angular-font-awesome
+  
+  need to do following for every component :
+  
+  import { AngularFontAwesomeModule } from 'angular-font-awesome';
+@NgModule({
+  //...
+  imports: [
+    //...
+    AngularFontAwesomeModule
+  ],
+  //...
+})
+
+If you're using Angular CLI, add the font-awesome CSS to styles inside the angular-cli.json
+
+"styles": [
+    "styles.css",
+    "../node_modules/font-awesome/css/font-awesome.css"
+],
+  
+  
+  add the following tag in index.html  :
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
